@@ -1,0 +1,28 @@
+{
+  "name": "rpg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:check": "eslint --max-warnings=0 --ignore-path .gitignore \"**/**/*.ts\"",
+    "lint:fix": "npm run lint:check -- --fix",
+    "format:check": "prettier --ignore-path .gitignore --list-different '**/**/*.{ts,json,md}'",
+    "format:fix": "npm run format:check -- --write",
+    "format:all": "npm run format:fix && npm run lint:fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "playwright": "^1.52.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.7.0"
+  }
+}

@@ -1,0 +1,23 @@
+# Node
+node_modules/
+dist/
+*.log
+
+# Playwright
+playwright-report/
+test-results/
+*.zip
+*.trace
+
+# VSCode
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Compiled output
+*.tsbuildinfo
+
+# Optional: system cache
+.cache/
